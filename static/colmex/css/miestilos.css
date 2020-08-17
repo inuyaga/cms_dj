@@ -1,0 +1,455 @@
+.prueba{
+    background-color: rgba(215, 44, 44, 0.3);
+  }
+  body{
+  /* background-color: #004990; */
+  background-color: white;
+  font-size: 1.5rem;
+  }
+
+  body h1, h2, h3, h4, h5, h6{
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  body p{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+    text-align: justify;
+    /* font-family: 'Segoe Print', sans-serif; */
+    /* font-family: 'Bodoni MT', sans-serif; */
+  }
+  body a{
+    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Papyrus', sans-serif; */
+    /* font-weight: bold; */
+  }
+  
+  #barraIdioma{
+/*  color:white;*/
+  /* background-color: transparent; */
+  background-color:#061a52;
+  /* background-color: rgba(78, 87, 255, 0.5); */
+  /* padding: 10px; */
+  height: 28px;
+  line-height:100%;
+  }
+
+  /* nav ul.mov{
+    transform: translateX(23%);
+    -webkit-transform: translateX(23%);
+  } */
+  .piepagina{
+    background-color: #061a52 !important;
+  }
+  #fondobar{
+  background-color: #061a52 !important;
+  /* color: blue;
+  width: 70%;
+  height: 50px;
+  border: 2px solid red;
+  padding: 10px;
+  float: right !important;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border:none;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(#4a148c, blue);  For Safari 5.1 to 6.0
+  background: -o-linear-gradient(#4a148c, blue);  For Opera 11.1 to 12.0
+  background: -moz-linear-gradient(#4a148c, blue);  For Firefox 3.6 to 15
+  background: linear-gradient(#4a148c, blue);  Standard syntax
+  background:black; */
+  }
+  /* .submenu2{
+  color: white;
+  background: -webkit-linear-gradient(#4a148c, yellow); 
+  background: -o-linear-gradient(#4a148c, yellow); 
+  background: -moz-linear-gradient(#4a148c, yellow); 
+  background: linear-gradient(#4a148c, yellow); 
+  } */
+  /* #video-background {
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+  z-index: -1;   
+  } */
+  #videoDiv {width:100%;
+    min-height: 100%; 
+   /* Set the height to match that of the viewport. */
+    height: 100vh;
+    width: auto;
+    padding:0!important;
+    margin: 0!important;
+    background-color: gray;
+    position: relative;}
+  /* #videoDiv {width: 100%; height: 608px; position: relative;} */
+  #videoBlock {width: 100%; height: 100%;  display: flex;  justify-content: center; align-items: center;}
+  #videoMessage {width: 100%; height:100%; position: absolute; top: 0; left: 0;}
+  /* #videoMessage *{padding:0.4em; margin:0} */
+  /* #videoMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 } */
+  /* #videoMessage h1{font-size: 2em;color:#ffffff;text-align:center;}
+  #videoMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
+  #videoMessage h3{font-size: 1.2em;color:#ffffff;text-align:center;} */
+  .videoClick {text-align:center}
+  .videoClick a{color:white;background-color:rgba(241, 241, 241, 0.25);font-size: 1.7em;cursor:pointer;cursor:hand}
+
+
+  .redTrans{
+    border:none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+    -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .collection .collection-item{
+    /* background-color: rgba(100, 0, 0, .5); */
+    background-color: #c2003e;
+  }
+  .collection.with-header .collection-header{
+    /* background-color: rgba(100, 0, 0, .5); */
+    background-color: #c2003e;
+  }
+  .banner{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+  }
+  /* .bannerconvenios{
+    background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../publico/images/BANNERCONVENIOS.png) no-repeat;
+    background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../publico/images/BANNERCONVENIOS.png) no-repeat;
+    background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../publico/images/BANNERCONVENIOS.png) no-repeat;
+    background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../publico/images/BANNERCONVENIOS.png) no-repeat;
+    background-size: cover;
+  } */
+
+  #caousel{
+    top:0px;
+  }
+
+  .instalaciones{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    border-left: 5px solid red;
+  }
+
+  .card #tarjetaindex{
+    background-color:#f90331;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  .card .tarjetaindex span{
+    font-size:12px;
+  }
+
+  .card .tarjetakinder span{
+    font-size:12px;
+  }
+
+  /* .card .tarjetaprimaria span{
+    font-size:18px;
+  } */
+
+  .card .card-reveal .letra{
+    font-size:12px;
+  }
+
+  .card #tarjetaindex2{
+    background-color: #8dc605;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetaindex3{
+    background-color: #00b3fe;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetaindex4{
+    background-color: #ca006f;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetaindex5{
+    background-color: #f1b104;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  .card #tarjetakinder{
+    background-color:#f90331;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  .card #tarjetakinder2{
+    background-color: #8dc605;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetakinder3{
+    background-color: #00b3fe;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetakinder4{
+    background-color: #ca006f;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetakinder5{
+    background-color: #f1b104;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  .card #tarjetakinder6{
+    background-color: #8a4098;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+
+
+  .card #tarjetaprimaria{
+    background-color:#f90331;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  .card #tarjetaprimaria2{
+    background-color: #8dc605;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetaprimaria3{
+    background-color: #00b3fe;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetaprimaria4{
+    background-color: #ca006f;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+  .card #tarjetaprimaria5{
+    background-color: #f1b104;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  .card #tarjetaprimaria6{
+    background-color: #8a4098;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    height: 17%;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+  }
+
+  h1{
+    text-shadow: -1px -1px 1px #aaa;
+  }
+
+  #cajalogo{
+    padding-left: 150px;
+    z-index: 1;
+  }
+
+  /* .logoTemblor{ */
+    /* width:332px;
+    height:30px;
+    background: red; */
+  /* } */
+  .logoTemblor:hover{
+    -webkit-animation: tiembla 0.5s infinite;
+  }
+  @-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
+  }
+
+  .parallax-container{
+    height: 600px;
+  }
+
+  #parallaxpaginainicio{
+    height: 150px;
+  }
+
+  #nino{
+    height: 250px;
+  }
+  .espaciocero{
+    padding: 0%;
+    border: 0%;
+    margin: 0%;
+  }
+
+  .row .espaciocero{
+    padding: 0 .01rem;
+    margin: 0%;
+  }
+  .inferiorderechaimg{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .inferiorizquierdaimg{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .centroimg{
+    display:block;
+    margin:auto;
+  }
+
+  hr.style18 { 
+    height: 30px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+  } 
+  hr.style18:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+  }
+  #informaticamecatronica{
+    background:url(../images/certificaciones/barramecatronica.png) no-repeat;
+    /* background-size: 100% 100%; */
+  }
+  #laboratorios{
+    background:url(../images/certificaciones/barralabvoratorios.png) no-repeat;
+    /* background-size: 100% 100%; */
+  }
+
+  /* .pulsa{
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  } */
+  .cardgiratoria .card-content p{
+    font-size: .7em;
+  }
+
+  #certificaciones{
+    background-color:#061a52;
+  }
+
+  .carousel{
+    height: 650px;
+  }
+
+  .enmedio{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}} */
+  #headprimaria{
+    margin-bottom: -130%;
+  }
+
+  #headsecundaria{
+    margin-bottom: -45%;
+  }

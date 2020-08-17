@@ -1,15 +1,1221 @@
 {% extends 'web/base.html' %}
+{% load static %}
+
+{% block titulo %}
+    Colegio México del Sureste
+{% endblock titulo %}
 
 
-{% block contenido %}
-<ul>
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
-</ul>
+{% block head %}
+<link rel="stylesheet" href="{% static 'colmex/assets/css/plugins.min.css' %}">
+<link rel="stylesheet" href="{% static 'colmex/assets/css/style.min.css' %}">
+<!-- <style>
+.modal { width: 35% !important ; max-height: 90% !important ; overflow-y: hidden !important ;}
+</style> -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3">
+</script>
+{% endblock head %}
     
+{% block contenido %}
+
+<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#two!"><img src="{% static 'colmex/images/slider/UnicaFelicidad.jpg' %}"></a>
+    <a class="carousel-item" href="#three!"><img src="{% static 'colmex/images/slider/BecaHermanos.jpg' %}"></a>
+    <a class="carousel-item" href="#four!"><img src="{% static 'colmex/images/slider/CamaraGessel.jpg' %}"></a>
+    <a class="carousel-item" href="#five!"><img src="{% static 'colmex/images/slider/SalaJuiciosOrales.jpg' %}"></a>
+    <a class="carousel-item" href="#six!"><img src="{% static 'colmex/images/slider/SalaCinematografia.jpg' %}"></a>
+  </div>
+  
+  <div class="row" style="margin-top:-2%; margin-bottom:2%;">
+    <div class="achievement-area">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="center" style="color:#061a52; margin-top:40px;">
+            ALGUNAS DE LAS UNIVERSIDADES EXTRANJERAS DE PRESTIGIO DONDE HAN INGRESADO
+          </h2>
+        </div>
+        <div class="banner">
+          <div class="carousel" id="carousel">
+            <a class="carousel-item" href="#one!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/ADERDEEN.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#two!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/FILM.png' %}">
+            </a>
+            <a class="carousel-item" href="#three!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/EPFL.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#four!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/HARVARD.png' %}">
+            </a>
+            <a class="carousel-item" href="#five!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CVUT.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#six!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/DUKE.png' %}">
+            </a>
+            <a class="carousel-item" href="#seven!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/FLORIDA.png' %}">
+            </a>
+            <a class="carousel-item" href="#eight!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/GRENOBLE.png' %}">
+            </a>
+            <a class="carousel-item" href="#nine!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/HULT.png' %}">
+            </a>
+            <a class="carousel-item" href="#ten!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/JUILLIARD.png' %}">
+            </a>
+            <a class="carousel-item" href="#eleven!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/KING.png' %}">
+            </a>
+            <a class="carousel-item" href="#twelve!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/FAU.png' %}">
+            </a>
+            <a class="carousel-item" href="#thirteen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/LOMALINDA.png' %}">
+            </a>
+            <a class="carousel-item" href="#fourteen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/ACADEMIAE.png' %}">
+            </a>
+            <a class="carousel-item" href="#fifteen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/WALDEN.png' %}">
+            </a>
+            <a class="carousel-item" href="#sixteen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/AERONAUTICAL.png' %}">
+            </a>
+            <a class="carousel-item" href="#seventeen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/BROCK.png' %}">
+            </a>
+            <a class="carousel-item" href="#eighteen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CALARTS.png' %}">
+            </a>
+            <a class="carousel-item" href="#nineteen!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/POLITECNICA.png' %}">
+            </a>
+            <a class="carousel-item" href="#twenty!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/MILANO.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#twentyone!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/MIT.png' %}">
+            </a>
+            <a class="carousel-item" href="#twentytwo!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/WINDTHORST.png' %}">
+            </a>
+            <a class="carousel-item" href="#twentythree!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CALIFORNIA.png' %}">
+            </a>
+            <a class="carousel-item" href="#twentyfour!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CARNEGIE.png' %}">
+            </a>
+            <a class="carousel-item" href="#twentyfive!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CITY.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#twentysix!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CORNELL.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#twentyseven!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/CURTIN.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#twentyeight!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/GNOMON.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#twentynine!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/GRENOBLEECOLE.png' %}">
+            </a>
+            <a class="carousel-item" href="#thirty!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/NICHOLSON.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#thirtyone!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/ROCKHURST.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#thirtytwo!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/SOUTBERN.jpg' %}">
+            </a>
+            <a class="carousel-item" href="#thirtythree!">
+              <img class="responsive-img" height="200" width="250"
+                src="{% static 'colmex/images/logouniversidades/TEXAS.jpg' %}">
+            </a>
+          </div><!--carrusel-->
+        </div><!--banner-->
+      </div><!--Container-->
+    </div><!--archive-->
+  </div><!--row-->
+  <div class="row">
+    <img class="responsive-img" src="{% static 'colmex/images/slider/SabiasQue.jpg' %}" alt="sabias que">
+  </div>
+  <div class="row">
+    <div class="achievement-area" style="background: #061a52; margin-top: 30px; margin-bottom:40px;height:auto;">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="center" style="color: #ffffff; margin-top:-1%;">
+            Nuestros Logros
+          </h3>
+        </div><!--section title-->
+        <div class="row">
+          <div class="col s12 col m4">
+            <div class="single-count mb-30 count-one">
+              <div class="count-img">
+                <img src="{% static 'colmex/assets/img/icon-img/funfact-2.png' %}" alt="fun icon 1">
+              </div>
+              <div class="count-content">
+                <h2 class="count" style="color:#DE1010;">66</h2>
+                <span style="color:#FFFFFF;">
+                  Universidades extranjeras donde han estudiado nuestros egresados.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 col m4">
+            <div class="single-count mb-30 count-two">
+              <div class="count-img">
+                <img src="{% static 'colmex/assets/img/icon-img/funfact-1.png' %}" alt="fun icon2">
+              </div>
+              <div class="count-content">
+                <h2 class="count" style="color:#DE1010;">278</h2>
+                <span style="color:#FFFFFF;">
+                  Triunfos académicos y deportivos
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 col m4">
+            <div class="single-count mb-30 count-three">
+              <div class="count-img">
+                <img src="{% static 'colmex/assets/img/icon-img/achieve-41.png' %}" alt="">
+              </div>
+              <div class="count-content">
+                <h2 class="count" style="color:#DE1010;">313</h2>
+                <span style="color:#FFFFFF;">
+                  Becas de universidades nacionales e internacionales.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div><!--row-->
+        <div class="row">
+          <div class="col m12 s12">
+            <p class="white-text" style="font-size: 20px;">
+              <?php if($_SESSION['idioma']=='es'){ ?>La primera escuela bicultural en Tabasco, 32 años de excelencia
+              educativa nacional y con alumnos en las mejores universidades internacionales del mundo.<?php } ?>
+              <?php if($_SESSION['idioma']=='en'){ ?>The first bicultural school in Tabasco, 32 years of national
+              educational excellence and with students in the best international universities in the world.<?php } ?>
+              <?php if($_SESSION['idioma']=='it'){ ?>La prima scuola biculturale in Tabasco, 32 anni di eccellenza
+              educativa nazionale e con studenti nelle migliori università internazionali del mondo.<?php } ?>
+            </p>
+            <p class="white-text" style="font-size: 20px;">
+              <?php if($_SESSION['idioma']=='es'){ ?>Nuestros egresados compiten con estudiantes de las mejores escuelas
+              del primer mundo y triunfan obteniendo becas ó admisiones en las universidades más prestigiosas del
+              mundo.<?php } ?>
+              <?php if($_SESSION['idioma']=='en'){ ?>Our graduates compete with students from the best schools in the
+              first world and succeed by obtaining scholarships or admissions at the most prestigious universities in the
+              world.<?php } ?>
+              <?php if($_SESSION['idioma']=='it'){ ?>I nostri laureati competono con gli studenti delle migliori scuole
+              del primo mondo e hanno successo ottenendo borse di studio o ammissioni presso le università più prestigiose
+              del mondo.<?php } ?>
+            </p>
+            <p class="white-text" style="font-size: 20px;">
+              <?php if($_SESSION['idioma']=='es'){ ?>La mejor herencia que traerá felicidad y seguridad a tu hijo en
+              cualquier adversidad que se enfrente en el mundo.<?php } ?>
+              <?php if($_SESSION['idioma']=='en'){ ?>The best inheritance that will bring happiness and security to your
+              child in any adversity that he faces in the world.<?php } ?>
+              <?php if($_SESSION['idioma']=='it'){ ?>La migliore eredità che porterà felicità e sicurezza a tuo figlio in
+              ogni avversità che affronta nel mondo.<?php } ?>
+            </p>
+          </div>
+        </div><!--row-->
+        <div class="testimonial-slider-wrap mt-45">
+          <div class="testimonial-text-slider">
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img alt="2" src="<?= base_url() ?>publico/assets/img/testimonial/2.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/2.jpg);">
+                    <div class="testi-info">
+                      <h5>Freddy Priego</h5>
+                      <?php if($_SESSION['idioma']=='es'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Estudio en el Colegio México del Sureste de 2005 a 2014 graduándose de la preparatoria con mención
+                        honorifica y promedio de 10 lo que lo hizo acreedor a una beca al talento académico para ingresar
+                        al Tecnológico de Monterrey en el año de 2014.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ingeniero en Físico Industrial del Instituto Tecnológico de Estudios Superiores de Monterrey,
+                        Campus Monterrey.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        En su carrera en el ITESM tuvo la oportunidad de estudiar “Tecnología de Fusión Termonuclear” de
+                        2017 a 2018 en la Czech Technical University in Prague (ČVUT).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Asistió al curso en “Diagnósticos de Plasma en Dispositivos Básicos de Física de Plasma y
+                        Tokamaks” en el École Polytechnique Fédérale de Lausanne en Lausana, Suiza (EPFL).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Participo en la Escuela de Verano de Fusión: 14th Kudowa Summer School “Towards Fusion Energy” en
+                        la ciudad de Kudowa, Polonia.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Realizo investigación básica en óptica matemática y econofísica durante su estancia en el ITESM,
+                        se desempeñó como presidente de la Sociedad de Alumnos de Ingeniero Físico Industrial (SAIFI),
+                        Coordinador General del Simposio de Física, entre otros.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Se graduó del ITESM en mayo 2019 con Grado Internacional del Programa Honors y énfasis en
+                        Investigación e Innovación.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Desempeño el puesto de Associate en la firma de consultoría estratégica Strategy & parte de la red
+                        de PwC (PricewaterhouseCoopers), donde desarrolla proyectos de optimización de costos, desarrollo
+                        de capacidades y oferta de valor para los sectores de autotransporte y productos industriales.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='en'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He studied at Colegio México del Sureste from 2005 to 2014 graduating from the preparation with an
+                        honorable mention and an average of 10, which earned him a scholarship to academic talent to enter
+                        the Tecnológico de Monterrey in 2014.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Industrial Physics Engineer from the Technological Institute of Higher Studies of Monterrey,
+                        Monterrey Campus.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        In his career at ITESM he had the opportunity to study "Thermonuclear Fusion Technology" from 2017
+                        to 2018 at the Czech Technical University in Prague (ČVUT).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Attended the course on “Plasma Diagnostics in Basic Plasma Physics Devices and Tokamaks” at the
+                        École Polytechnique Fédérale de Lausanne in Lausanne, Switzerland (EPFL).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        I participate in the Fusion Summer School: 14th Kudowa Summer School “Towards Fusion Energy” in
+                        the city of Kudowa, Poland.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He carried out basic research in mathematical and econophysical optics during his stay at ITESM,
+                        he served as president of the Society of Students of Industrial Physical Engineer (SAIFI), General
+                        Coordinator of the Physics Symposium, among others.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He graduated from ITESM in May 2019 with an International Degree from the Honors Program and an
+                        emphasis in Research and Innovation.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        I hold the position of Associate in the strategic consulting firm Strategy & part of the PwC
+                        network (PricewaterhouseCoopers), where he develops projects for cost optimization, capacity
+                        development and value offer for the auto transport and industrial products sectors.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='it'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha studiato al Colegio México del Sureste dal 2005 al 2014 laureandosi al liceo con una menzione
+                        d'onore e una media di 10, che gli è valsa una borsa di studio per talenti accademici per entrare
+                        al Tecnológico de Monterrey nel 2014.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ingegnere di fisica industriale dell'Istituto tecnologico di studi superiori di Monterrey,
+                        Monterrey Campus.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Nella sua carriera in ITESM ha avuto l'opportunità di studiare "Tecnologia di fusione
+                        termonucleare" dal 2017 al 2018 presso l'Università tecnica ceca di Praga (ČVUT).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha frequentato il corso di "Diagnostica al plasma in dispositivi di base per la fisica del plasma
+                        e Tokamak" presso l'École Polytechnique Fédérale di Lausanne a Losanna, Svizzera (EPFL).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Partecipo alla Fusion Summer School: 14a Kudowa Summer School “Verso la fusione dell'energia”
+                        nella città di Kudowa, in Polonia.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha svolto ricerche di base in ottica matematica ed econofisica durante la sua permanenza presso
+                        ITESM, ha ricoperto il ruolo di presidente della Society of Students of Industrial Physical
+                        Engineer (SAIFI), coordinatore generale del Physics Symposium, tra gli altri.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Si è laureato presso ITESM a maggio 2019 con una laurea internazionale presso il programma Honours
+                        e un'enfasi in ricerca e innovazione.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ricopro la posizione di Associato nella società di consulenza strategica Strategia e parte della
+                        rete PwC (PricewaterhouseCoopers), dove sviluppa progetti per l'ottimizzazione dei costi, lo
+                        sviluppo di capacità e l'offerta di valore per i settori del trasporto automobilistico e dei
+                        prodotti industriali.
+                      </p>
+                      <?php } ?>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img alt="" src="<?= base_url() ?>publico/assets/img/testimonial/3.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/3.jpg);">
+                    <div class="testi-info">
+                      <h5>Esteban Sánchez Canepa</h5>
+                      <?php if($_SESSION['idioma']=='es'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Obtuvo una beca en Tec de Monterrey y salió con el mejor GPA de la escuela de ingeniería. Se
+                        graduó en Ingeniería Mecatrónica en el Tec y obtuvo beca King Abdullah University of Science &
+                        Technology (KAUST) en Ingeniería Mecánica.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Estudio en King Abdullah University of Science & Technology (KAUST) y fue financiado por
+                        $30,000.00 dólares para empezar su compañía como socio fundador.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Participo en el Foro de Ciencia y Tecnología en el Senado de la República, la continuidad y la
+                        tecnología son sumamente importantes para la implementación de proyectos de resiliencia urbana.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Visito a la Universidad de Tribhuvan en Nepal y hablo sobre la resiliencia urbana y la tecnología
+                        de <a href="https://sadeemwss.com/">SADEEM</a>.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Implemento sus sensores de ciudad inteligente para monitoreo de inundaciones, tráfico y medio
+                        ambiente en lugares de Arabia Saudita, Emiratos Árabes Unidos, México y Estados Unidos.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        <a href="https://sadeemwss.com/">SADEEM</a> una compañía de sistemas de detección ambiental
+                        inalámbrica de KAUST y la primera solución de sensores multi-patentada del mundo para monitoreo de
+                        inundaciones, tráfico, clima y calidad del aire, ha asegurado $ 2.6 millones de coinversión del
+                        Fondo de Innovación KAUST y Saudi Aramco's Wa'ed.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Cinco de los mejores han ganado los clasificatorios saudíes para Copa Mundial de Emprendimiento
+                        Mundial y recibieron un premio de $50,000 de dólares, entre ellas está la empresa <a
+                          href="https://sadeemwss.com/">SADEEM</a>, que está relacionado con la gestión de inundaciones,
+                        la calidad del aire y el control del tráfico.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='en'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He obtained a scholarship at Tec de Monterrey and got the best GPA from the engineering school. He
+                        graduated in Mechatronic Engineering from Tec and obtained a King Abdullah University of Science &
+                        Technology (KAUST) scholarship in Mechanical Engineering.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He studied at King Abdullah University of Science & Technology (KAUST) and was funded by
+                        $30,000.00 to start his company as a founding partner.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        I participate in the Science and Technology Forum in the Senate of the Republic, continuity and
+                        technology are extremely important for the implementation of urban resilience projects.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        I visit Tribhuvan University in Nepal and talk about urban resilience and technology <a
+                          href="https://sadeemwss.com/"> SADEEM </a>.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        I implement its smart city sensors for flood, traffic and environmental monitoring in locations in
+                        Saudi Arabia, the United Arab Emirates, Mexico and the United States.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        <a href="https://sadeemwss.com/"> SADEEM </a> a company of wireless environmental detection
+                        systems from KAUST and the world's first multi-patented sensor solution for monitoring floods,
+                        traffic, weather and air quality, has secured a $ 2.6 million joint venture from the KAUST
+                        Innovation Fund and Saudi Aramco's Wa'ed.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Five of the best have won the Saudi qualifiers for World Entrepreneurship World Cup and received a
+                        prize of $ 50,000 dollars, among them is the company <a href="https://sadeemwss.com/"> SADEEM
+                        </a>, which is related to flood management, air quality and traffic control.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='it'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha ottenuto una borsa di studio alla università Tec de Monterrey ed è uscito con il miglior GPA
+                        dalla scuola di ingegneria. Si è laureato in ingegneria meccatronica presso la Tec e ha ottenuto
+                        una borsa di studio in ingegneria meccanica presso la King Abdullah University of Science &
+                        Technology (KAUST).
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha studiato alla King Abdullah University of Science & Technology (KAUST) ed è stato finanziato da
+                        $ 30.000,00 per avviare la sua azienda come socio fondatore.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha partecipato al Forum scientifico e tecnologico al Senato della Repubblica, la continuità e la
+                        tecnologia sono estremamente importanti per la realizzazione di progetti di resilienza urbana.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha visitato l'Università di Tribhuvan in Nepal e ha parlato della resilienza urbana e della
+                        tecnologia <a href="https://sadeemwss.com/">SADEEM</a>.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha implementato i suoi sensori di città intelligenti per il monitoraggio di inondazioni, traffico
+                        e ambiente in località in Arabia Saudita, Emirati Arabi Uniti, Messico e Stati Uniti.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        <a href="https://sadeemwss.com/">SADEEM</a>, una società di sistemi di rilevamento ambientale
+                        wireless KAUST e la prima soluzione di sensori multi-brevettata al mondo per il monitoraggio di
+                        alluvioni, traffico, clima e qualità dell'aria, ha assicurato una joint venture da $ 2,6 milioni
+                        dal KAUST Innovation Fund e Saudi Aramco's Wa'ed.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Cinque dei migliori hanno vinto le qualificazioni saudite per i Mondiali di imprenditoria mondiale
+                        e hanno ricevuto un premio di $ 50.000 dollari, tra cui la società <a
+                          href="https://sadeemwss.com/">SADEEM</a>, che è legata alla gestione delle inondazioni, alla
+                        qualità dell'aria e al controllo del traffico.
+                      </p>
+                      <?php } ?>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img loading="lazy" alt="Emiliano Gomez Suárez"
+                  src="<?= base_url() ?>publico/assets/img/testimonial/8beca.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/8beca.jpg);">
+                    <div class="testi-info">
+                      <h5>Emiliano Gomez Suárez</h5>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        <?php if($_SESSION['idioma']=='es'){ ?>Obtuvo 90% de al ser el mejor en el examen de admisión de
+                        toda su carrera en Instituto Tecnológico Autónomo de México (ITAM).<?php } ?>
+                        <?php if($_SESSION['idioma']=='en'){ ?>He obtained 90% of being the best in the admission exam of
+                        his entire career at the Instituto Tecnológico Autónomo de México (ITAM).<?php } ?>
+                        <?php if($_SESSION['idioma']=='it'){ ?>Ha ottenuto il 90% di essere il migliore nell'esame di
+                        ammissione di tutta la sua carriera presso l'Instituto Tecnológico Autónomo de México
+                        (ITAM).<?php } ?>
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        <?php if($_SESSION['idioma']=='es'){ ?>La Beca Baillères consta de 10 semestres nominales pagados
+                        al 100%. Se dan una por programa, donde hay 3 criterios: necesidad, puntaje en el examen y el
+                        estudio socioeconómico.<?php } ?>
+                        <?php if($_SESSION['idioma']=='en'){ ?>The Baillères Scholarship consists of 10 nominal semesters
+                        paid at 100%. One is given per program, where there are 3 criteria: need, exam score and
+                        socioeconomic study.<?php } ?>
+                        <?php if($_SESSION['idioma']=='it'){ ?>La borsa di studio Baillères è composta da 10 semestri
+                        nominali pagati al 100%. Uno è dato per programma, dove ci sono 3 criteri: necessità, punteggio
+                        dell'esame e studio socioeconomico.<?php } ?>
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        <?php if($_SESSION['idioma']=='es'){ ?>El puntaje general de la prueba es de 1600, lo cual el
+                        alumno alcanzó un puntaje de 1532, las preguntas contienen un español, matemáticas e
+                        inglés.<?php } ?>
+                        <?php if($_SESSION['idioma']=='en'){ ?>The general score of the test is 1600, which the student
+                        reached a score of 1532, the questions contain Spanish, mathematics and English.<?php } ?>
+                        <?php if($_SESSION['idioma']=='it'){ ?>Il punteggio generale del test è 1600, che lo studente ha
+                        raggiunto il punteggio di 1532, le domande contengono spagnolo, matematica e inglese.<?php } ?>
+                      </p>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img alt="" src="<?= base_url() ?>publico/assets/img/testimonial/MIT.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/MIT.jpg);">
+                    <div class="testi-info">
+                      <h5>Arturo Ochoa Gonzáles</h5>
+                      <?php if($_SESSION['idioma']=='es'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Realizó la maestría de Ingeniera en Sistemas en Massachussets Institute of Technology, la
+                        universidad más importante de Estados Unidos y de las mejores del mundo.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='en'){  ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He completed her Master's degree in Systems Engineering at the Massachusetts Institute of
+                        Technology, the most important university in the United States and one of the best in the world.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='it'){  ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha completato il suo Master in Ingegneria dei Sistemi presso il Massachusetts Institute of
+                        Technology, la più importante università degli Stati Uniti e una delle migliori al mondo.
+                      </p>
+                      <?php } ?>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img alt="" src="<?= base_url() ?>publico/assets/img/testimonial/0beca.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/pattern.png);">
+                    <div class="testi-info">
+                      <h5>Natalia Cárdenas</h5>
+                      <?php if($_SESSION['idioma']=='es'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Segunda alumna en ingresar a Harvard. Aplicó entre más de 40,000 aspirantes de todo el mundo, de
+                        los cuales sólo seleccionan al 5%.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Obtuvo con beca completa de Harvard y fuera invitada al comité de latinos sobresalientes.</p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Destacada por sus actividades extra curriculares, ha ganado concursos nacionales e internaciones
+                        de robótica. Junto con sus compañeros de grupo ganó el premio municipal de la juventud 2019 en el
+                        área de tecnología.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        En su traslado le pagaron dinero para ir a Estados Unidos.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='en'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Second student to enter Harvard. He applied among more than 40,000 applicants from all over the
+                        world, of which they only select 5%.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        She earned a full Harvard scholarship and was invited to the Outstanding Latinos Committee.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Featured for its extra curricular activities, it has won national and international robotics
+                        competitions. Together with his groupmates he won the 2019 municipal youth award in the area of
+                        ​​technology.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        On his transfer they paid him money to go to the United States.
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='it'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Seconda studentessa per entrare ad Harvard. Ha fatto domanda tra oltre 40.000 candidati
+                        provenienti da tutto il mondo, di cui selezionano solo il 5%.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha conseguito una borsa di studio completa ad Harvard ed è stata invitata al Comitato
+                        latinoamericano eccezionale.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Celebre per le sue attività extra curriculari, ha vinto concorsi nazionali e internazionali di
+                        robotica. Insieme ai suoi compagni di gruppo ha vinto il premio municipale per la gioventù 2019
+                        nel settore della tecnologia.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Al suo trasferimento gli hanno pagato i soldi per andare negli Stati Uniti.
+                      </p>
+                      <?php } ?>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img alt="" src="<?= base_url() ?>publico/assets/img/testimonial/3beca.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/pattern.png);">
+                    <div class="testi-info">
+                      <h5>Alejandro Sánchez</h5>
+                      <p>
+                        <?php if($_SESSION['idioma']=='es'){ ?>
+                        Nuestro ex-alumno, es el 1er estudiante tabasqueño en obtener una beca CONACYT para estudiar una
+                        maestría en la Universidad Curtin, en Australia.
+                        <?php } ?>
+                        <?php if($_SESSION['idioma']=='en'){ ?>
+                        Our former student, is the 1st Tabasco student to obtain a CONACYT scholarship to study a master's
+                        degree at Curtin University, in Australia.
+                        <?php } ?>
+                        <?php if($_SESSION['idioma']=='it'){ ?>
+                        Il nostro ex studente è il primo studente di Tabasco ad ottenere una borsa di studio CONACYT per
+                        studiare per un master presso la Curtin University, in Australia.
+                        <?php } ?>
+                      </p>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi-content-wrap row">
+              <div class="testi-big-img col s12 m12 l6">
+                <img alt="" src="<?= base_url() ?>publico/assets/img/testimonial/4beca.jpg">
+              </div>
+              <div class="row no-gutters">
+                <div class="col s12 m12 l6">
+                  <div class="testi-content bg-img default-overlay"
+                    style="background-image:url(<?= base_url() ?>publico/assets/img/testimonial/pattern.png);">
+                    <div class="testi-info">
+                      <h5>Jade Kristel Vidal Cerino</h5>
+                      <?php if($_SESSION['idioma']=='es'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ex-alumna con una destacada trayectoria académica, se graduó de la maestría en la Universidad de
+                        Aberdeen en Escocia.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Participó en el programa de Internado de Texas AM University.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Obtuvo el mejor promedio de su generación de la Licenciatura en Ingeniería Industrial para la
+                        Dirección en la Universidad Anáhuac.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Obtuvo un reconocimiento en la excelencia académica de la Licenciatura en Ingeniería Industrial
+                        para la Dirección de su institución en el La Asociación Nacional de Facultades y Escuelas de
+                        Ingeniería (ANFEI).
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='en'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ex-student with an outstanding academic career, she graduated with a Master's degree from the
+                        University of Aberdeen in Scotland.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Participated in the Texas AM University Internship program.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        He obtained the best average of his generation of the Bachelor of Industrial Engineering for
+                        Management at Universidad Anáhuac.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Obtained recognition in academic excellence of the Bachelor of Industrial Engineering for the
+                        Management of your institution in the National Association of Engineering Faculties and Schools
+                        (ANFEI).
+                      </p>
+                      <?php } ?>
+                      <?php if($_SESSION['idioma']=='it'){ ?>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Un’ex studentessa con una straordinaria carriera accademica, si è laureata con un Master presso
+                        l'Università di Aberdeen in Scozia.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha partecipato al programma di tirocinio presso la Texas AM University.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha conseguito la migliore media della sua generazione di laurea in ingegneria industriale per la
+                        gestione presso l'Università Anáhuac.
+                      </p>
+                      <p style="font-size:16px;"><i class="material-icons">done</i>
+                        Ha conseguito il riconoscimento in eccellenza accademica del Corso di laurea in Ingegneria
+                        industriale per la gestione della sua istituzione presso la National Association of Faculty and
+                        Schools of Engineering (ANFEI).
+                      </p>
+                      <?php } ?>
+                      <a class="waves-effect waves-light btn-small" href="<?= base_url("Bienvenido/NuestrosLogros") ?>"><i
+                          class="material-icons left">add</i><?php if($_SESSION['idioma']=='es'){ ?>Ver
+                        más<?php } ?><?php if($_SESSION['idioma']=='en'){ ?> See
+                        more<?php } ?><?php if($_SESSION['idioma']=='it'){ ?> Vedi di più<?php } ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-image-slider">
+            <div class="sin-testi-image">
+              <img src="<?= base_url() ?>publico/assets/img/testimonial/7mini.jpg" alt="mini testimonial">
+            </div>
+            <div class="sin-testi-image">
+              <img src="<?= base_url() ?>publico/assets/img/testimonial/6mini.jpg" alt="mini testimonial">
+            </div>
+            <div class="sin-testi-image">
+              <img loading="lazy" src="<?= base_url() ?>publico/assets/img/testimonial/8mini.jpg"
+                alt="Emiliano Gomez Suárez">
+            </div>
+            <div class="sin-testi-image">
+              <img src="<?= base_url() ?>publico/assets/img/testimonial/5mini.jpg" alt="mini testimonial">
+            </div>
+            <div class="sin-testi-image">
+              <img src="<?= base_url() ?>publico/assets/img/testimonial/0mini.jpg" alt="mini testimonial">
+            </div>
+            <div class="sin-testi-image">
+              <img src="<?= base_url() ?>publico/assets/img/testimonial/3mini.jpg" alt="mini testimonial">
+            </div>
+            <div class="sin-testi-image">
+              <img src="<?= base_url() ?>publico/assets/img/testimonial/4mini.jpg" alt="mini testimonial">
+            </div>
+          </div><!--testimonial image slider ---mini----->
+        </div><!--testimonial grande-->
+      </div><!--container-->
+    </div><!--achivement-->
+  </div><!--row-->
+  
+  <!-- <div class="row" style="margin-top:5%;">
+      <div class="container">
+        <h5 style="color:#021b53; font-size: 1.8em; text-transform: uppercase;">Somos inigualables, vanguardistas y pioneros</h5>
+        <p style="font-size: 1.4em; color: #666666; font-family:trebuchet ms;">Videollamadas para todas las secciones escolares, asesorías de control de escritorio para padres de familia, enseñanza de nuevos temas fácil e interactivo.</h4>
+        <div class="center-align">
+          <video src="<?= base_url() ?>publico/video/video.mp4" width="100%" height="600" controls loop>
+        </div>
+        </video>
+      </div>
+  </div> -->
+  
+  <hr>
+  <div class="row">
+    <div class="col s12 m8">
+      <div class="col s12 m12">
+        <iframe width="100%" height="415" src="https://www.youtube.com/embed/TdJ99Lsx_3Q" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col s12 m12">
+        <img class="responsive-img" src="<?= base_url() ?>publico/images/index/_67A0068.png" alt="img">
+      </div>
+    </div>
+  
+    <div class="col s12 m4">
+      <!-- <h1>Colegio México del Sureste</h1> -->
+      <h3 style="color:#021b53; font-size: 1.8em; text-transform: uppercase;">
+        <?php if($_SESSION['idioma']=='es'){ ?> EDUCAMOS PERSONAS, NO MASAS DESDE 1988.<?php } ?>
+        <?php if($_SESSION['idioma']=='en'){ ?> WE EDUCATE PEOPLE, NOT MASSES SINCE 1988.<?php } ?>
+        <?php if($_SESSION['idioma']=='it'){ ?> EDUCIAMO LE PERSONE, NON MASSE DAL 1988<?php } ?>
+      </h3>
+      <p style="color: #666666; font-family:trebuchet ms;">
+        <?php if($_SESSION['idioma']=='es'){ ?>Nuestro proyecto educativo impulsa la formación de personas humanistas, a
+        través de métodos educativos innovadores que se enfocan en sus competencias y un modelo educativo para la vida y
+        la pedagogía de la comprensión.<?php } ?>
+        <?php if($_SESSION['idioma']=='en'){ ?>Our educational project promotes the formation of humanistic people,
+        through innovative educational methods that focus on their competence and an educational model for life and the
+        pedagogy of understanding.<?php } ?>
+        <?php if($_SESSION['idioma']=='it'){ ?> Il nostro progetto educativo promuove la formazione di persone
+        umanistiche, attraverso metodi educativi innovativi che si concentrano sulle loro competenze e un modello
+        educativo per la vita e la pedagogia della comprensione.<?php } ?>
+      </p>
+      <p style="color: #666666; font-family:trebuchet ms;">
+        Fuimos la única escuela que imprimió con sus impresoras 3D 60 caretas en total y fueron donadas a médicos y 30 a
+        diversos ciudadanos, todo esto se logró gracias a la subdirectora Alejandra León que siempre esta demostrando la
+        educación altruista que es fortaleza de la institución.
+      </p>
+    </div>
+  </div>
+  
+  <div class="parallax-container center valign-wrapper" id="parallaxpaginainicio">
+    <div class="parallax">
+      <img src="<?= base_url() ?>publico/images/index/parallaxpaginainicio.jpg">
+    </div>
+    <div class="container white-text">
+      <div class="row">
+        <div class="col m12 s12">
+          <h4>
+            <?php if($_SESSION['idioma']=='es'){ ?>ASEGURA LA MEJOR HERENCIA QUE LE TRAERÁ FELICIDAD Y TRIUNFO A TUS
+            HIJOS<?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>ENSURE THE BEST INHERITANCE THAT WILL BRING HAPPINESS AND TRIUMPH TO
+            YOUR CHILDREN<?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>ASSICURA L'EREDITÀ MIGLIORE CHE PORTA FELICITÀ E TRIONFO AI TUOI
+            BAMBINI<?php } ?>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col m12 s12 center-align">
+      <h1 style="line-height: 2%;">
+        <span style="color:#f90331">C</span>
+        <span style="color:#8dc605">T</span>
+        <span style="color:#00b3fe">I</span>
+        <span style="color:#ca006f">A</span>
+        <span style="color:#f1b104">M</span>
+      </h1>
+    </div>
+  </div>
+  
+  <div id="box">
+    <div class="row">
+      <div class="col m5ths s6 espaciocero box_single card">
+        <div class="single_box waves-effect">
+          <div class="img_box waves-block waves-light">
+            <img src="<?= base_url() ?>publico/images/index/ciencia.jpg" alt="" />
+          </div>
+          <div class="card-content tarjetaprimaria" id="tarjetaprimaria">
+            <span class="card-title" style="font-size:20px;"><b>
+                <?php if($_SESSION['idioma']=='es'){ ?>Ciencia<?php } ?>
+                <?php if($_SESSION['idioma']=='en'){ ?>Science<?php } ?>
+                <?php if($_SESSION['idioma']=='it'){ ?>Scienza<?php } ?>
+              </b></span>
+          </div>
+          <div class="content_box">
+            <?php if($_SESSION['idioma']=='es'){ ?>
+            <h5>Ciencia</h5>
+            <p>Se promueve el método científico para la toma de decisiones del alumno dentro y fuera del aula, mediante
+              actividades prácticas en nuestro laboratorio.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>
+            <h5>Science</h5>
+            <p>He scientific method for the decision making of the student inside and outside the classroom is promoted,
+              through practical activities in our laboratory.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>
+            <h5>Science</h5>
+            <p>Il metodo scientifico per il processo decisionale degli studenti all'interno e all'esterno dell'aula è
+              promosso attraverso attività pratiche nel nostro laboratorio.</p>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+      <div class="col m5ths s6 espaciocero box_single card">
+        <div class="single_box waves-effect">
+          <div class="img_box waves-block waves-light">
+            <img src="<?= base_url() ?>publico/images/index/tecnlogia.jpg" alt="" />
+          </div>
+          <div class="card-content tarjetaprimaria" id="tarjetaprimaria2">
+            <span class="card-title" style="font-size:20px;"><b>
+                <?php if($_SESSION['idioma']=='es'){ ?>Tecnología<?php } ?>
+                <?php if($_SESSION['idioma']=='en'){ ?>Technology<?php } ?>
+                <?php if($_SESSION['idioma']=='it'){ ?>Tecnologia<?php } ?>
+              </b></span>
+          </div>
+          <div class="content_box">
+            <?php if($_SESSION['idioma']=='es'){ ?>
+            <h5>Tecnología</h5>
+            <p>Formamos alumnos con habilidades para hacer frente al siglo XXI, a través de la integración de las
+              herramientas tecnológicas y digitales en su aprendizaje.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>
+            <h5>Technology</h5>
+            <p>We train students with skills to face the 21st century, through the integration of technological and
+              digital tools in their learning.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>
+            <h5>Tecnologia</h5>
+            <p>Formiamo gli studenti con competenze per affrontare il XXI secolo, attraverso l'integrazione di strumenti
+              tecnologici e digitali nel loro apprendimento.</p>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+      <div class="col m5ths s6 espaciocero box_single card">
+        <div class="single_box waves-effect">
+          <div class="img_box waves-block waves-light">
+            <img src="<?= base_url() ?>publico/images/index/ingenieria.jpg" alt="" />
+          </div>
+          <div class="card-content tarjetaprimaria" id="tarjetaprimaria3">
+            <span class="card-title" style="font-size:20px;"><b>
+                <?php if($_SESSION['idioma']=='es'){ ?>Introducción a la Ingeniería<?php } ?>
+                <?php if($_SESSION['idioma']=='en'){ ?>Introduction to Engineering<?php } ?>
+                <?php if($_SESSION['idioma']=='it'){ ?>Introduzione all'ingegneria<?php } ?>
+              </b></span>
+          </div>
+          <div class="content_box">
+            <?php if($_SESSION['idioma']=='es'){ ?>
+            <h5>Introducción a la Ingeniería</h5>
+            <p>Se crean espacios con enfoque en ingeniería en los que el alumno lleve a cabo procesos de diseño, así como
+              resolución de problemas a través del desarrollo de proyectos interdisciplinarios.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>
+            <h5>Introduction to Engineering</h5>
+            <p>Spaces are created with focus on engineering in which the student carries out design processes, as well as
+              problem solving through the development of interdisciplinary projects.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>
+            <h5>Introduzione all'ingegneria</h5>
+            <p>Se crei spazi con un focus ingegneristico in cui lo studente eseguirà i processi di progettazione, nonché
+              problem solving attraverso lo sviluppo di progetti interdisciplinari.</p>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+      <div class="col m5ths s6 espaciocero box_single card">
+        <div class="single_box waves-effect">
+          <div class="img_box waves-block waves-light">
+            <img src="<?= base_url() ?>publico/images/index/artes.jpg" alt="" />
+          </div>
+          <div class="card-content tarjetaprimaria" id="tarjetaprimaria4">
+            <span class="card-title" style="font-size:20px;"><b>
+                <?php if($_SESSION['idioma']=='es'){ ?>Artes<?php } ?>
+                <?php if($_SESSION['idioma']=='en'){ ?>Arts<?php } ?>
+                <?php if($_SESSION['idioma']=='it'){ ?>Arts<?php } ?>
+              </b></span>
+          </div>
+          <div class="content_box">
+            <?php if($_SESSION['idioma']=='es'){ ?>
+            <h5>Artes</h5>
+            <p>Fomentamos las competencias artísticas como parte de su desarrollo integral, ya que les permite desarrollar
+              su creatividad y ser partícipes de manera activa en la sociedad de la información y el conocimiento.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>
+            <h5>Arts</h5>
+            <p>We encourage artistic competences as part of their integral development, since it allows them to develop
+              their creativity and be active participants in the information and knowledge society.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>
+            <h5>Arts</h5>
+            <p>Promuoviamo le competenze artistiche come parte del loro sviluppo integrale, poiché consente loro di
+              sviluppare la loro creatività ed essere attivamente coinvolti nella società dell'informazione e della
+              conoscenza.</p>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+      <div class="col m5ths s6 espaciocero box_single card">
+        <div class="single_box waves-effect">
+          <div class="img_box">
+            <img class="responsive-img" src="<?= base_url() ?>publico/images/index/matematicas.jpg" alt="" />
+          </div>
+          <div class="card-content tarjetaprimaria" id="tarjetaprimaria5">
+            <span class="card-title" style="font-size:20px;"><b>
+                <?php if($_SESSION['idioma']=='es'){ ?>Matemáticas<?php } ?>
+                <?php if($_SESSION['idioma']=='en'){ ?>Maths<?php } ?>
+                <?php if($_SESSION['idioma']=='it'){ ?>Matematica<?php } ?>
+              </b></span>
+          </div>
+          <div class="content_box">
+            <?php if($_SESSION['idioma']=='es'){ ?>
+            <h5>Matemáticas</h5>
+            <p>Contextualizamos los conceptos y operaciones matemáticas para un óptimo desarrollo del pensamiento
+              matemático.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>
+            <h5>Maths</h5>
+            <p>Contextualize mathematical concepts and operations for an optimal development of mathematical thinking.</p>
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>
+            <h5>Matematica</h5>
+            <p>Contestualizziamo concetti e operazioni matematiche per uno sviluppo ottimale del pensiero matematico.</p>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="parallax-container" id="parallaxpaginainicio" style="margin-top:80px; background-color:#061a52;">
+    <h3 class="center" style="color:#ffffff;">
+      <?php if($_SESSION['idioma']=='es'){ ?>SOMOS PIONEROS BICULTURALES TRILINGÜES<?php } ?>
+      <?php if($_SESSION['idioma']=='en'){ ?>WE ARE TRILINGUAL PIONEERS<?php } ?>
+      <?php if($_SESSION['idioma']=='it'){ ?>SIAMO PIONIERI MULTILINGUE<?php } ?>
+    </h3>
+  </div>
+  <div class="row center" style="background-color:#061a52;">
+    <div class="col offset-m2 m8 center">
+      <div class="col s6 m4 center">
+        <img style="max-width:120px;" src="<?= base_url() ?>publico/images/primaria/estadosunidos.png"
+          class="responsive-img center-block" alt="headprimaria">
+        <h5 style="color:#ffffff;">
+          <?php if($_SESSION['idioma']=='es'){ ?>Inglés<?php } ?>
+          <?php if($_SESSION['idioma']=='en'){ ?>English<?php } ?>
+          <?php if($_SESSION['idioma']=='it'){ ?>Inglese<?php } ?>
+        </h5>
+      </div>
+      <div class="col s6 m4 center">
+        <img style="max-width:120px;" src="<?= base_url() ?>publico/images/primaria/inglaterra.png"
+          class="responsive-img center-block" alt="headprimaria">
+        <h5 style="color:#ffffff;">
+          <?php if($_SESSION['idioma']=='es'){ ?>Inglés<?php } ?>
+          <?php if($_SESSION['idioma']=='en'){ ?>English<?php } ?>
+          <?php if($_SESSION['idioma']=='it'){ ?>Inglese<?php } ?>
+        </h5>
+      </div>
+      <!--   <div class="col s6 m3 center">
+          <img style="max-width:120px;" src="<?= base_url() ?>publico/images/primaria/francia.png" class="responsive-img center-block" alt="headprimaria">
+          <h5 style="color:#ffffff;">
+            <?php if($_SESSION['idioma']=='es'){ ?>
+              Francés
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='en'){ ?>
+              French
+            <?php } ?>
+            <?php if($_SESSION['idioma']=='it'){ ?>
+              Francese
+            <?php } ?>
+          </h5>
+        </div> -->
+      <div class="col s6 m4 center">
+        <img style="max-width:120px;" src="<?= base_url() ?>publico/images/primaria/italia.png"
+          class="responsive-img center-block" alt="headprimaria">
+        <h5 style="color:#ffffff;">
+          <?php if($_SESSION['idioma']=='es'){ ?>Italiano<?php } ?>
+          <?php if($_SESSION['idioma']=='en'){ ?>Italian<?php } ?>
+          <?php if($_SESSION['idioma']=='it'){ ?>Italiane<?php } ?>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="background-color:#061a52; margin-top:-25px;">
+    <div class="col offset-m2 m8 center">
+      <h4 class="center-align" style="color:#FFFFFF; font-size: 1.8em; text-transform: uppercase;">
+        <?php if($_SESSION['idioma']=='es'){ ?>Somos centro preparador de las mejores certificaciones internacionales de
+        diferentes idiomas en todos sus niveles<?php } ?>
+        <?php if($_SESSION['idioma']=='en'){ ?> We are a preparation center of the best international certifications of
+        different languages at all levels <?php } ?>
+        <?php if($_SESSION['idioma']=='it'){ ?> Siamo il centro di preparazione delle migliori certificazioni
+        internazionali di diverse lingue a tutti i livelli<?php } ?>
+      </h4>
+    </div>
+  </div>
+  
+  <div class="row" id="certificaciones" style="margin-top:-25px;">
+    <div class="container">
+      <img class="responsive-img" width="100%" src="<?= base_url() ?>publico/images/index/torres.png"
+        alt="certificaciones">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="center" style="color:#061a52">
+          <?php if($_SESSION['idioma']=='es'){ ?>TENEMOS CONVENIOS CON LAS MEJORES UNIVERSIDADES DEL PAÍS<?php } ?>
+          <?php if($_SESSION['idioma']=='en'){ ?> WE HAVE AGREEMENTS WITH THE BEST UNIVERSITIES IN THE COUNTRY<?php } ?>
+          <?php if($_SESSION['idioma']=='it'){ ?> ABBIAMO ACCORDI CON LE MIGLIORI UNIVERSITÀ DEL PAESE<?php } ?>
+        </h2>
+      </div>
+      <div class="banner">
+        <div class="carousel" id="carousel">
+          <a class="carousel-item" href="#one!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/logoanahuac.png" alt="Anahuac">
+          </a>
+          <a class="carousel-item" href="#two!">
+            <img class="responsive-img" height="200" width="250" src="<?= base_url() ?>publico/images/logosuni/itam.png"
+              alt="ITAM">
+          </a>
+          <a class="carousel-item" href="#three!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/logotec.png" alt="Tec">
+          </a>
+          <a class="carousel-item" href="#four!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/logopana.png" alt="Panamericana">
+          </a>
+          <a class="carousel-item" href="#five!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/arkansas.png" alt="Arkansas">
+          </a>
+          <a class="carousel-item" href="#six!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/logoupaep.png" alt="UPAEP">
+          </a>
+          <a class="carousel-item" href="#seven!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/LOGOiteso.jpg" alt="Iteso">
+          </a>
+          <a class="carousel-item" href="#eight!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/logolasalle.png" alt="Salle">
+          </a>
+          <a class="carousel-item" href="#nine!">
+            <img class="responsive-img" height="200" width="250" src="<?= base_url() ?>publico/images/logosuni/uag.png"
+              alt="UAG">
+          </a>
+          <a class="carousel-item" href="#ten!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/logoolmeca.png" alt="Olmeca">
+          </a>
+          <a class="carousel-item" href="#eleven!">
+            <img class="responsive-img" height="200" width="250" src="<?= base_url() ?>publico/images/logosuni/colon.png"
+              alt="Colon">
+          </a>
+          <a class="carousel-item" href="#twelve!">
+            <img class="responsive-img" height="200" width="250"
+              src="<?= base_url() ?>publico/images/logosuni/LOGOibero.jpg" alt="Ibero">
+          </a>
+          <a class="carousel-item" href="#thirteen!">
+            <img class="responsive-img" height="200" width="250" src="<?= base_url() ?>publico/images/logosuni/modelo.jpg"
+              alt="Modelo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock contenido %}
 
+
+{% block script %}
+<script src="{% static 'colmex/assets/js/plugins.min.js' %}"></script>
+<script src="{% static 'colmex/assets/js/main.min.js' %}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.carousel');
+    var ele = document.getElementById('#carousel');
+    var options = {
+      duration: 1000,
+      numVisible: 5,
+      fullWidth: true,
+      dist: 0,
+      shift: 1,
+      padding: 30,
+      indicators: false,
+      noWrap: false
+    };
+    var instances = M.Carousel.init(elems, options);
+    var instance = M.Carousel.getInstance(ele);
+    setInterval(instance.next(), 1000);
+  });
+
+  $(document).ready(function () {
+    $('.slider').slider();
+    setInterval(function () {
+      $('.carousel').carousel('next');
+    }, 5000);
+  });
+</script>
+{% endblock script %}
     

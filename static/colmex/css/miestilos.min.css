@@ -1,0 +1,107 @@
+.prueba{background-color:rgba(215,44,44,.3)}body{background-color:#fff;font-size:1.5rem}body h1,h2,h3,h4,h5,h6{font-family:'Trebuchet MS',sans-serif}body p{font-family:'Titillium Web',sans-serif;text-align:justify}body a{font-family:'Titillium Web',sans-serif}#barraIdioma{background-color:#061a52;height:28px;line-height:100%}.piepagina{background-color:#061a52!important}#fondobar{background-color:#061a52!important}#videoDiv{width:100%;min-height:100%;height:100vh;width:auto;padding:0!important;margin:0!important;background-color:gray;position:relative}#videoBlock{width:100%;height:100%;display:flex;justify-content:center;align-items:center}#videoMessage{width:100%;height:100%;position:absolute;top:0;left:0}.videoClick{text-align:center}.videoClick a{color:#fff;background-color:rgba(241,241,241,.25);font-size:1.7em;cursor:pointer;cursor:hand}.redTrans{border:none;box-shadow:0 0 0 transparent;-webkit-box-shadow:0 0 0 transparent;-moz-box-shadow:0 0 0 transparent}.collection .collection-item{background-color:#c2003e}.collection.with-header .collection-header{background-color:#c2003e}.banner{padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;height:100%;width:100%;z-index:-5}#caousel{top:0}.instalaciones{background-color:rgba(0,0,0,.5);width:100%;border-left:5px solid red}.card #tarjetaindex{background-color:#f90331;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card .tarjetaindex span{font-size:12px}.card .tarjetakinder span{font-size:12px}.card .card-reveal .letra{font-size:12px}.card #tarjetaindex2{background-color:#8dc605;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaindex3{background-color:#00b3fe;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaindex4{background-color:#ca006f;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaindex5{background-color:#f1b104;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetakinder{background-color:#f90331;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetakinder2{background-color:#8dc605;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetakinder3{background-color:#00b3fe;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetakinder4{background-color:#ca006f;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetakinder5{background-color:#f1b104;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetakinder6{background-color:#8a4098;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaprimaria{background-color:#f90331;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaprimaria2{background-color:#8dc605;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaprimaria3{background-color:#00b3fe;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaprimaria4{background-color:#ca006f;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaprimaria5{background-color:#f1b104;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}.card #tarjetaprimaria6{background-color:#8a4098;width:100%;text-align:center;padding:1px;height:17%;color:#fff;font-size:18px;font-weight:400}h1{text-shadow:-1px -1px 1px #aaa}#cajalogo{padding-left:150px;z-index:1}.logoTemblor:hover{-webkit-animation:tiembla .5s infinite}@-webkit-keyframes tiembla{0%{-webkit-transform:rotateZ(-5deg)}50%{-webkit-transform:rotateZ(0) scale(.8)}100%{-webkit-transform:rotateZ(5deg)}}.parallax-container{height:600px}#parallaxpaginainicio{height:150px}#nino{height:250px}.espaciocero{padding:0;border:0;margin:0}.row .espaciocero{padding:0 .01rem;margin:0}.inferiorderechaimg{position:absolute;bottom:0;right:0}.inferiorizquierdaimg{position:absolute;bottom:0;left:0}.centroimg{display:block;margin:auto}hr.style18{height:30px;border-style:solid;border-color:#8c8b8b;border-width:1px 0 0 0;border-radius:20px}hr.style18:before{display:block;content:"";height:30px;margin-top:-31px;border-style:solid;border-color:#8c8b8b;border-width:0 0 1px 0;border-radius:20px}#informaticamecatronica{background:url(../images/certificaciones/barramecatronica.png) no-repeat}#laboratorios{background:url(../images/certificaciones/barralabvoratorios.png) no-repeat}.cardgiratoria .card-content p{font-size:.7em}#certificaciones{background-color:#061a52}.carousel{height:650px}.enmedio{position:relative;top:50%;transform:translateY(-50%)}#headprimaria{margin-bottom:-130%}#headsecundaria{margin-bottom:-45%}
+.bts {
+  padding: 2em;
+  margin: 0.6em 0;
+  margin-top: 
+}
+.bts-a:hover{
+  color: #79b42b;
+  text-decoration: none;
+  background: white;   
+}
+.bts span {
+  text-align: center; 
+  font-size: .9em;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.social{
+  transition: background 200ms ease-in-out 0s;
+  -webkit-transition: background 200ms ease-in-out 0s;
+  -moz-transition: background 200ms ease-in-out 0s;
+  -o-transition: background 200ms ease-in-out 0s;
+  -ms-transition: background 200ms ease-in-out 0s;
+  
+  margin-top: 12px;
+  -webkit-border-top-left-radius:1px;
+  -moz-border-radius-topleft:1px;
+  border-top-left-radius:1px;
+  -webkit-border-top-right-radius:1px;
+  -moz-border-radius-topright:1px;
+  border-top-right-radius:1px;
+  -webkit-border-bottom-right-radius:1px;
+  -moz-border-radius-bottomright:1px;
+  border-bottom-right-radius:1px;
+  -webkit-border-bottom-left-radius:1px;
+  -moz-border-radius-bottomleft:1px;
+  border-bottom-left-radius:1px;
+  text-indent:0;
+  display:block;
+  color:#ffffff;
+  height:50px;
+  line-height:50px;
+  width: 100%;
+  text-decoration:none;
+  text-align:center;
+}
+
+.facebook {   
+  background-color:#3b5898;  
+}
+.facebook:hover {
+  background-color:#5177c2;
+}
+.facebook:active {
+  position:relative;
+  top:1px;
+}
+.whatsapp {  
+  background-color: #00bb2d; 
+}
+.whatsapp:hover {
+  background-color: #0ffb51;
+}
+.whatsapp:active {
+  position:relative;
+  top:1px;
+}
+.messenger { 
+  background-color:#00abee;  
+}
+.messenger:hover {
+  background-color:#4cbde6;
+}
+.messenger:active {
+  position:relative;
+  top:1px;
+}
+.instagram { 
+  background-color:#c0038b;  
+}
+.instagram:hover {
+  background-color:#f004ae;
+}
+.instagram:active {
+  position:relative;
+  top:1px;
+}
+.bts a:hover{
+  text-decoration: none;
+  color: white;
+}
+.bts a:active{
+  color: white;
+  text-decoration: none;
+}
+.bts a:focus{
+  text-decoration: none;
+  color: white;
+}
+.bts i{ 
+    margin: 15px 15px 15px 20px;
+    float: left;
+    width: 5%;
+    font-size: 20px;
+    margin-left: 20px;
+}

@@ -1,30 +1,383 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-    {% block titulo %}
-        SIE
-    {% endblock titulo %}
-        </title>
+        {% block titulo %}
+        Colegio México del Sureste
+        {% endblock titulo %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Escuela pionera trilingüe, somos centro preparador de las mejores certificaciones internacionales de diferentes idiomas en todos sus niveles..." />
+    <meta
+        keywords="Educación, Educación Tabasco, trilingüe, Escuelas Privadas, Educacion Privadas, Protesis de Mano, Protesis de Perros, Sillas Para Perros, Secundaria, Preparatoria, Kinder, Primaria, Ingles Tabasco, Escuelas Fresas, Colegios, Trilingüe, Bilingüe, Biculturales en Tabasco, Bicultural, Lengua Materna, Italiano Tabasco, Español Tabasco, COLMEX, Colegio México del Sureste, Colegio Mexico">
+    <meta property="og:title" content="Colegio México del Sureste" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="693865838096779" />
+    <meta property="og:description" content="La mejor herencia que traerá felicidad y seguridad a tus hijos" />
+    <meta property="og:image" content="{% static 'colmex//images/urlportada.jpg' %}" />
+    <meta property="og:url" content="http://colegiomexicodelsureste.edu.mx/" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'colmex/css/materialize.min.css' %}"
+        media="screen,projection" />
+    <link rel="shortcut icon" href="{% static 'colmex/images/urlportada.jpg' %}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'colmex/css/miestilos.min.css' %}"
+        media="screen,projection" />
+    <script src="{% static 'colmex/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '181837882472694');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=181837882472694&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1365618,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- Hotjar Tracking Code for http://colegiomexicodelsureste.edu.mx/ -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142430385-1"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="110599475940519" theme_color="#061a52"
+        logged_in_greeting="¡Hola!, tenemos becas y varias promociones. Contáctenos para cotizarle."
+        logged_out_greeting="¡Hola!, tenemos becas y varias promociones. Contáctenos para cotizarle.">
+    </div>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142430385-1');
+    </script>
+    
+    {% block head %}
+        
+    {% endblock head %}
+        
 </head>
+
 <body>
+    <div class="row espaciocero">
+        <nav class="nav-extended" id="modBarra">
+            <nav id="barraIdioma">
+                <div class="nav-wrapper">
+                    <a href="<?= base_url() ?>" class="brand-logo hide-on-med-and-down" id="cajalogo">
+                        <img class="responsive-img" width="100px"
+                            src="{% static 'colmex/images/logoCMSCircular.png' %}">
+                    </a>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="<?= base_url('Bienvenido/Espanol') ?>" style="font-size:20px;">
+                                <img class="responsive-img" style="height: 24px;"
+                                    src="{% static 'colmex/images/banderas/mex.png' %}">
+                                ESP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('Bienvenido/Ingles') ?>" style="font-size:20px;">
+                                <img class="responsive-img" style="height: 24px;"
+                                    src="{% static 'colmex/images/banderas/ame.png' %}">
+                                ENGL
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('Bienvenido/Italiano') ?>" style="font-size:20px;">
+                                <img class="responsive-img" style="height: 24px;"
+                                    src="{% static 'colmex/images/banderas/ita.png' %}">
+                                ITL
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">Menú</a>
+            <div class="nav-wrapper" style="background-color:#061a52;">
+                <ul class="right hide-on-med-and-down mov">
+                    <li><a class="" href="">
+                            <i class="material-icons">home</i>
+                        </a></li>
+                    <li><a class=" dropdown-trigger" data-target="dropdown1">
+                            Nosotros
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a></li>
+                    <li><a class=" dropdown-trigger" data-target="ofertaeducativa">
+                            Oferta Educativa
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a></li>
+                    <li><a class="" href="">
+                            CMS Live Podcast
+                        </a></li>
+                    <li><a class="" href="">
+                            Nuestros Logros
+                        </a></li>
+                    <li><a class="" href="">
+                            Servicios
+                        </a></li>
+                    <li><a class="" href="">
+                            Costos
+                        </a></li>
+                    <li><a class="" href="">
+                            Contacto
+                        </a></li>
+                    <li><a class="" href="https://innovat1.mx/gmural/alumnos/#/login">
+                            Iniciar Sesión
+                        </a></li>
+                    <li><a class="" href="">
+                            Gatiland
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+    </div>
 
-{% block barra %}
-    <h2>tutulo</h2>
-{% endblock barra %}
-    
-    
+    <ul class="sidenav" id="mobile-demo">
+        <li style="background-color: #F2F2F2;"><a href="">
+                Inicio
+            </a></li>
+
+        <li style="background-color: #F2F2F2;" class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">
+                        Nosotros
+                        <i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="">
+                                    Historia
+                                </a></li>
+                            <li><a href="">
+                                    Misión, visión y valores
+                                </a></li>
+                            <li><a href="">
+                                    Instalaciones
+                                </a></li>
+                            <li><a href="">
+                                    Nuestras fortalezas
+                                </a></li>
+                            <li><a href="">
+                                    Nuestro Escudo
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li style="background-color: #F2F2F2;" class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">
+                        Oferta Educativa
+                        <i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="">
+                                    Preescolar
+                                </a></li>
+                            <li><a href="">
+                                    Primaria
+                                </a></li>
+                            <li><a href="">
+                                    Secundaria
+                                </a></li>
+                            <li><a href="">
+                                    Preparatoria
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+
+        <li style="background-color: #F2F2F2;"><a class="" href="">
+                CMS Live Podcast
+            </a></li>
+        <li style="background-color: #F2F2F2;"><a class="" href="">
+                Nuestros Logros
+            </a></li>
+        <li style="background-color: #F2F2F2;"><a class="" href="">
+                Servicios
+            </a></li>
+        <li style="background-color: #F2F2F2;"><a class="" href="">
+                Costos
+            </a></li>
+        <li style="background-color: #F2F2F2;"><a href="">
+                Contacto
+            </a></li>
+        <li style="background-color: #F2F2F2;"><a href="https://innovat1.mx/gmural/alumnos/#/login">
+                Iniciar Sesión
+            </a></li>
+        <li style="background-color: #F2F2F2;"><a class="" href="">
+                Gatiland
+            </a></li>
+    </ul>
+    <!-- <div class="container"> -->
+    <ul id="dropdown1" class="dropdown-content red darken-4">
+        <li><a class="white-text" href="">
+                Historia
+            </a></li>
+        <li><a class="white-text" href="">
+                Misión, visión y valores
+            </a></li>
+        <li><a class="white-text" href="">
+                Instalaciones
+            </a></li>
+        <li><a class="white-text" href="">
+                Nuestras fortalezas
+            </a></li>
+        <li><a class="white-text" href="">
+                Nuestro Escudo
+            </a></li>
+    </ul>
+    <ul id="dropdownServicios" class="dropdown-content red darken-4">
+        <li><a class="white-text" href="">
+                Salón de fiestas
+            </a></li>
+        <li><a class="white-text" href="">
+                Enfermeria
+            </a></li>
+        <li><a class="white-text" href="">
+                Cafeteria
+            </a></li>
+        <li><a class="white-text" href="">
+                Caja
+            </a></li>
+    </ul>
+    <ul id="ofertaeducativa" class="dropdown-content red darken-4">
+        <li><a class="white-text" href="">
+                Preescolar
+            </a></li>
+        <li><a class="white-text" href="">
+                Primaria
+            </a></li>
+        <li><a class="white-text" href="">
+                Secundaria
+            </a></li>
+        <li><a class="white-text" href="">
+                Preparatoria
+            </a></li>
+    </ul>
+
     {% block contenido %}
-        <H1>encavezado tiruaoisd</H1>
-    {% endblock contenido %}
 
+    {% endblock contenido %}
+    <!-- /map -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15181.027359310805!2d-92.92759340213242!3d17.966783757480137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd9d2d17da3b3%3A0x1c5c81d3622f6287!2sCOLEGIO%20M%C3%89XICO!5e0!3m2!1ses-419!2smx!4v1579717111542!5m2!1ses-419!2smx"
+            width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="">
+        </iframe>
+    </div>
+
+    <div class="fb-customerchat" page_id=""></div>
+    <div class="fb-send-to-messenger" messenger_app_id="263902037430900" page_id="110599475940519"
+        data-ref="<PASS_THROUGH_PARAM>" color="<blue | white>" size="<standard | large | xlarge>">
+    </div>
+    <footer class="page-footer piepagina">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 center">
+                    <h5 class="white-text">Síguenos en Redes Sociales</h5>
+                    <ul>
+                        <a class="btn-floating pulse blue" href="https://m.me/ColegioMexicodelSuresteCMS"><i
+                                class="fab fa-facebook-messenger fa-3x"></i></a>
+                        <a class="btn-floating pulse blue darken-4"
+                            href="https://www.facebook.com/ColegioMexicodelSuresteCMS/"><i
+                                class="fab fa-facebook-square fa-3x"></i></a>
+                        <a class="btn-floating pulse pink darken-2"
+                            href="https://www.instagram.com/colegiomexicodelsureste/"><i
+                                class="fab fa-instagram fa-3x"></i></a>
+                        <a class="btn-floating pulse green" href="https://api.whatsapp.com/send?phone=529934366898"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a class="btn-floating pulse deep-purple darken-1"
+                            href="http://nube.colegiomexicodelsureste.edu.mx/"><i class="fas fa-cloud"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright center">
+            <div class="container">
+                <h6>© <script>
+                        document.write(new Date().getFullYear());
+                    </script> Copyright Colegio México del Sureste</h6>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="{% static 'colmex/js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'colmex/js/materialize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'colmex/js/jquery.flip.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'colmex/js/funcionesG.min.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+    </script>
     
-    {% block footer %}
-        <h4>Pie de pagina</h4>
-    {% endblock footer %}
+    {% block script %}
         
-        
+    {% endblock script %}
 </body>
+
 </html>
