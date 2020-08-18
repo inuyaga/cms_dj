@@ -1,0 +1,29 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block titulo %}
+    Historia
+{% endblock titulo %}
+
+{% block contenido %}
+<div class="parallax-container">
+        <img class="responsive-img inferiorizquierdaimg" src="{% static 'colmex/images/bannerhistoria.png' %}" alt="historia">
+    <div class="parallax"><img src="{% static 'colmex/images/parallaxhistoria.jpg' %}"></div>
+</div>
+
+<div class="row">
+    <div class="col m12 center">
+        <img src="{% static 'colmex/images/historia/historia.png' %}" class="responsive-img" alt="historia">
+    </div>
+</div>
+{% endblock contenido %}
+
+{% block script %}
+<script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        $('.slider').slider();
+    });
+</script>
+{% endblock script %}
+    

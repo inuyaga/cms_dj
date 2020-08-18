@@ -4,3 +4,5 @@ from django.views.generic import TemplateView
 class webindex(TemplateView):
     template_name = "web/index.html"
     
+class historia(TemplateView):
+    template_name = "web/historia.html"
