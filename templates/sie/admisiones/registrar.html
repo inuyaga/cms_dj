@@ -1,0 +1,30 @@
+{% extends 'sie/base.html' %}
+{% block titulo %}
+    SIECMS - ADMISIONES
+{% endblock titulo %}
+
+{% block contenido %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header no-bg b-a-0">
+                Registrar un nuevo prospecto
+            </div>
+            <div class="card-block">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-round btn-primary btn-icon loading-demo m-r-xs m-b-xs">
+                        <span class="material-icons">
+                            save
+                            </span>
+                        Guardar información
+                      </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
+
+    

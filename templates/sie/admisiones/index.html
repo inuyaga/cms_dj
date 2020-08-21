@@ -1,0 +1,104 @@
+{% extends 'sie/base.html' %}
+{% block titulo %}
+    SIECMS - Lista prospectos
+{% endblock titulo %}
+
+{% block contenido %}
+
+{% for prospectos in object_list %}
+    <div class="card">
+        <div class="card-header no-bg b-a-0">
+          Bootstrap option
+        </div>
+        <div class="card-block">
+          <p>
+            Create responsive tables by wrapping any
+            <code>
+              .table
+            </code>
+            in
+            <code>
+              .table-responsive
+            </code>
+            to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.
+          </p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped m-b-0">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    Tutor(es)
+                  </th>
+                  <th>
+                    Correo
+                  </th>
+                  <th>
+                    Teléfono
+                  </th>
+                  <th>
+                    Proviene de
+                  </th>
+                  <th>
+                    Grado
+                  </th>
+                  <th>
+                    Alumno(s)
+                  </th>
+                  <th>
+                    Fecha Captura
+                  </th>
+                  <th>
+                    Estatus
+                  </th>
+                  <th>
+                      Acción
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="text-center">
+                       <a href="{{ prospectos.p_imagenIdentidad.url }}"><img width="100px" height="100px" src="{{ prospectos.p_imagenIdentidad.url }}" class="rounded" alt="{{ prospectos.p_id }}"></a>
+                    </div>
+                  </td>
+                  <td>
+                    <a href="{% url 'sie:DetalleAdmision' prospectos.p_id %}">{{ prospectos.p_padre }}/{{ prospectos.p_padre2}}</a>
+                  </td>
+                  <td>
+                    {{ prospectos.p_correo }}
+                  </td>
+                  <td>
+                    {{ prospectos.p_telefono }}
+                  </td>
+                  <td>
+                    {{ prospectos.p_provieneEscuela }}
+                  </td>
+                  <td>
+                    {{ prospectos.p_grado }}
+                  </td>
+                  <td>
+                    {{ prospectos.p_alumno }}/{{ prospectos.p_alumno2 }}/{{ prospectos.p_alumno3 }}
+                  </td>
+                  <td>
+                    {{ prospectos.p_fechaC }}
+                  </td>
+                  <td>
+                      <code>
+                          {{ prospectos.p_estatus }}
+                      </code>
+                  </td>
+                  <td>
+                      
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+{% endfor %}
+    
+{% endblock contenido %}
+
+    

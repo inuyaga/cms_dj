@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.usuario',
+    'app.sie',
 ]
 AUTH_USER_MODEL = 'usuario.User'
 MIDDLEWARE = [
