@@ -1,0 +1,123 @@
+body{
+    background-color: #191e4f;
+}
+
+body p h1 h2 h3 h4 h5 h6{
+    color: black;
+}
+
+.panel-default .panel-heading{
+    color: white;
+    background-color: #d2092b;
+    border-color: #ddd;
+}
+
+.floating-wpp-message{
+    color: black;
+}
+#scrollUp{
+    bottom:30px;
+    right:90px;
+    width:50px;
+    height:52px;
+    background: url('https://centrouniversitariocolegiomexico.com/publico/images/f_Arriba.png');
+    background-size: cover;
+}
+
+    .letrablanca{
+        color: white;
+    }
+
+    .conteoR{
+        color:white;
+        font-size: 200%;
+        background-color: #d2092b;
+        /* background-color: #191e4f; */
+        border-radius: 1.5rem;
+    }
+
+    .nuevo a{
+        color:white;
+    }
+
+    #what{
+        color: green;
+    }
+
+    .pulse{
+        border-width:1px;
+    }
+
+    .titulos{
+        color: #d2092b;
+    }
+
+    #principalnav{
+        width:100%;
+        background-color: white;
+        border: 0px;
+        float: right;
+        top:0px;
+        margin: 0px;
+        padding: 0px;
+        z-index: 1;
+    }
+    #principalnav li a{
+        font-family: "Open Sans Semibold", Times, serif;
+        /* color: #191e4f; */
+        font-size: 1.5rem;
+    }
+
+    #segundaNav{
+        background-color: #d2092b;
+        border: 0px;
+        float: right;
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #segundaNav ul li a{
+        color: white;
+    }
+    #segundaNav li:hover{
+        background-color: #191e4f;
+    }
+
+    .sinB{
+        padding: 0%;
+    }
+
+    .sinBT{
+        padding: 0%;
+        background-color:  rgba(255,255,255,1);
+    }
+
+    #imglogo{
+        position: relative;
+        float: right;
+    }
+
+    #imgbannerCentro{
+        display:block;
+        margin:auto;
+    }
+
+    .carousel-indicators2
+    {
+        position: absolute;
+        bottom: 0px;
+        left: 00%;
+        z-index: 15;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0%;
+        text-align: center;
+        list-style: none;
+    }
+
+    .carousel-indicators2 .btn{
+        width: 100%;
+        color: white;
+        background-color: #d2092b;
+        border-color: #ddd;
+    }
