@@ -3,4 +3,4 @@ from django.views.generic import TemplateView
 
 
 class Inicio(TemplateView):
-    template_name = "cucm/base.html"
+    template_name = "cucm/inicio.html"

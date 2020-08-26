@@ -1,0 +1,351 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>
+    {% block titulo %}
+    Centro Universitario Colegio México
+    {% endblock titulo %}
+        </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="{% static 'cucm/images/favicon/favicon.ico' %}" />
+    <meta name="description" content="Nuestras licenciaturas y maestrías cuentan con RVOE y se caracterizan por la innovación en la estructura de su diseño curricular."/>
+	<meta name="keywords" content="Centro Universitario Colegio México, Universidad, Tabasco, Villahermosa, Universidad Privada, Universidad Privada en Tabasco, CUCM, Universidades en Tabasco, Centro Universitario, Universidades Privadas en Tabasco, Universidad en Tabasco, Universidad CUCM, Licenciatura y Maestria en Tabasco, Universidad en Administración en Tabasco, Universidad en Derecho en Tabasco, Maestria en Administración en Tabasco, Maestria en Educación en Tabasco, Maestria en Juicios Orales en Tabasco" />
+	<link href="{% static 'cucm/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{% static 'cucm/css/style.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'cucm/css/owl.carousel.css' %}" type="text/css" media="all">
+	<link rel="stylesheet" href="{% static 'cucm/css/owl.theme.css' %}" type="text/css" media="all">
+	<link href="{% static 'cucm/css/font-awesome.min.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'cucm/css/lightbox.min.css' %}">
+	<link rel="stylesheet" href="{% static 'cucm/css/estilosM.css' %}">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<div class="mcwidget-embed" data-widget-id="7972132"></div>	
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1319688298422009'); 
+	fbq('track', 'PageView');
+	</script>
+	<noscript>
+	<img height="1" width="1" 
+	src="https://www.facebook.com/tr?id=1319688298422009&ev=PageView
+	&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- ManyChat -->
+	<!-- <script src="//widget.manychat.com/714312745415828.js" async="async"></script> -->
+	<!-- Hotjar Tracking Code for https://centrouniversitariocolegiomexico.com/ -->
+    <!-- <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1365619,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script> -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142430385-2"></script>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="714312745415828"
+  theme_color="#191e4f"
+  logged_in_greeting="Hola!, en que puedo ayudarle?"
+  logged_out_greeting="Hola!, en que puedo ayudarle?">
+      </div>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142430385-2');
+</script>
+</head>
+<body>
+	<div class="agileits_top_menu hidden-xs hidden-sm">
+		<div class="w3l_header_left">
+			<ul class="nuevo">
+				<a><li><i class="fas fa-phone"></i>3520686</li></a>
+				<a><li><i class="fas fa-phone"></i>Servicios escolares Ext 115</li></a>
+				<a><li><i class="fas fa-phone"></i>Dirección académica 107</li></a>
+				<a><li><i class="fas fa-phone"></i>Cobranza y facturación Ext 227 Y 106</li></a>
+				<!-- <a href="https://api.whatsapp.com/send?phone=529933481509" ><li><i class="fab fa-whatsapp fa-lg" id="what"></i>9933481509</li></a> -->
+			</ul>
+		</div>
+		<div class="w3l_header_right hidden-xs">
+			<div class="w3ls-social-icons text-left">
+				<a class="facebook" href="https://www.facebook.com/centrouniversitariocolegiomexicodelsureste/"><i class="fab fa-facebook-square"></i></a>
+				<a class="facebook" href="https://m.me/centrouniversitariocolegiomexicodelsureste?ref=w3478401"><i class="fab fa-facebook-messenger"></i></a>
+				<a class="twitter" href="https://www.instagram.com/colegiomexicodelsureste/"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+<!-- <div class="container"> -->
+	<!-- <div class="container-fluid"> -->
+		<div class="panel panel-default">
+			<div class="panel-body sinB">
+				<div class="col-md-12">
+				
+				<!-- <div class="content white agile-info"> -->
+					<nav class="navbar navbar-default" id="principalnav" role="navigation">
+						<div class="container">
+							<div class="navbar-header">
+								<button style="background-color: white" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="">Menú</span>
+								</button>
+								<a class="navbar-brand" href="#"><img class="visible-xs" src="{% static 'cucm/images/logo.jpeg' %}" width="27" height="35" alt=""></a>
+							</div>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<nav class="link-effect-2" id="link-effect-2">
+										<nav class="navbar navbar-default hidden-sm hidden-xs" id="segundaNav">
+											<div class="container-fluid">
+												<div class="collapse navbar-collapse">
+													<a class="navbar-brand" href="#">
+														<img src="{% static 'cucm/images/logo.jpeg' %}" width="110" height="140" alt="" id="imglogo">
+													</a>
+												<ul class="nav navbar-nav navbar-right">
+													<!-- <li><a href="#">HISTORIA</a></li> -->
+													<li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                                                    <li><a href="#" class="effect-3">CONTACTO</a></li>
+                                                    
+                                                    
+                                                    {% if user.is_authenticated %}  
+													<li><a href="#" class="effect-3">CERRAR SESIÓN</a></li>
+													<li><a href="#" class="effect-3">CALIFICACIONES</a></li>													                                                                                                               
+                                                    {% endif %}
+                                                         
+													<!-- <li><a href="<?= base_url("Bienvenido/System"); ?>" class="effect-3">INICIAR SESIÓN</a></li> -->
+													
+													<!-- <form class="navbar-form navbar-left">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Busqueda">
+														</div>
+														<button type="submit" class="btn btn-default">Buscar</button>
+													</form> -->
+													<!-- <li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+													<ul class="dropdown-menu">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+														<li role="separator" class="divider"></li>
+														<li><a href="#">Separated link</a></li>
+													</ul>
+													</li> -->
+												</ul>
+												</div>
+											</div>
+										</nav>
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#" class="effect-3">INICIO</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">INFORMES <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">RVOE</a></li>
+											<li><a href="#">DIRECTORIO</a></li>
+											<li><a href="#">ACREDITACIONES Y CONVENIOS</a></li>
+											<li><a href="#">CALENDARIO</a></li>
+											<li><a href="#" class="effect-3">PAGOS</a></li>
+											<li><a href="#">REGLAMENTO</a></li>
+										</ul>
+									</li>
+									<!-- <li class="dropdown">
+										<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">MODALIDADES<b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="<?= base_url("Bienvenido/LDCE"); ?>">PRESENCIAL</a></li>
+											<li><a href="<?= base_url("Bienvenido/LAFI"); ?>">ONLINE</a></li>
+											<li><a href="<?= base_url("Bienvenido/LAFI"); ?>">EJECUTIVA</a></li>
+										</ul>
+									</li> -->
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">OFERTA ACADÉMICA <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#"><i class="fa fa-check"></i> LIC EN DERECHO Y CORPORATIVO</br>EMPRESARIAL</a></li>
+											<li><a href="#"><i class="fa fa-check"></i> LIC EN ADMINISTRACION Y </br> FINANZAS INTERNACIONALES</a></li>
+											<li><a href="#"><i class="fa fa-check"></i> LIC EN CONTADURÍA, AUDITORÍA E </br> IMPUESTOS</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#"><i class="fa fa-check"></i> MAESTRÍA EN ADMINISTRACIÓN</a></li>
+											<li><a href="#"><i class="fa fa-check"></i> MAESTRÍA EN JUICIOS ORALES</a></li>
+											<li><a href="#"><i class="fa fa-check"></i> MAESTRÍA EN EDUCACIÓN CON </br> ENFOQUE EN COMPETENCIA</a></li>
+										</ul>
+									</li>
+									<li><a href="#" class="effect-3">CUCM</a></li>
+									<li><a href="#" class="effect-3">SERVICIOS ESCOLARES</a></li>
+									<li><a href="#" class="effect-3">INSCRIPCIONES</a></li>
+                                    
+                                    {% if user.is_authenticated %}                                                                                                                                                     
+									<li><a href="#" class="effect-3">CERRAR SESIÓN</a></li>
+									<li><a href="#" class="effect-3">CALIFICACIONES</a></li>
+                                    {% else %}
+                                    <li><a href="#" class="effect-3">INICIAR SESIÓN</a></li>                                        
+                                    {% endif %}
+								</ul>
+								</nav>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>		
+	<!-- </div> -->
+<!-- </div> -->
+
+
+
+
+
+{% block contenido %}
+    
+{% endblock contenido %}
+    
+
+
+
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1128.2678597884958!2d-92.92997735159192!3d17.977546157271348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd9f768932c93%3A0xc8610422819e1e59!2sCENTRO%20UNIVERSITARIO%20COLEGIO%20MEXICO!5e0!3m2!1ses-419!2smx!4v1579717644057!5m2!1ses-419!2smx" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<!-- footer -->
+<div class="footer_top_agileits">
+    <div class="container">
+        <div class="col-md-4 footer_grid">
+            <h3 style="color:#ffffff;">Síguenos en redes sociales</h3>
+            <a class="facebook" href="https://www.facebook.com/centrouniversitariocolegiomexicodelsureste/"><i style="color:whitesmoke" class="fab fa-facebook-square fa-3x"></i></a>
+            <a class="twitter" href="https://www.instagram.com/colegiomexicodelsureste/"><i style="color:whitesmoke" class="fab fa-instagram fa-3x"></i></a>
+            <a class="facebook" href="https://m.me/centrouniversitariocolegiomexicodelsureste?ref=w3478401"><i style="color:whitesmoke" class="fab fa-facebook-messenger fa-3x"></i></a>
+            <a class="whastapp" href="https://api.whatsapp.com/send?phone=529931801807"><i style="color:whitesmoke" class="fab fa-whatsapp fa-3x"></i></a>
+            <h4 style="color:white">Lunes a Viernes 08:00 a 15:00</h4><br>
+            <h4 style="color:white">Sábados  08:00 a 14:30</h4>
+        </div>
+        <div class="col-md-4 footer_grid">
+            <h3 style="color:whitesmoke">Oferta Educativa</h3>
+            <ul class="footer_grid_list">
+                <li>
+                    <i class="fas fa-angle-right" aria-hidden="true" style="color:#ffffff;"></i>
+                    <a href="#">Licenciatura en Administración y Finanzas Internacionales</a>
+                </li>
+                <li>
+                    <i class="fas fa-angle-right" aria-hidden="true" style="color:#ffffff;"></i>
+                    <a href="#">Licenciatura en Derecho y Corporativo Empresarial</a>
+                </li>
+                <li><i class="fas fa-angle-right" aria-hidden="true" style="color:#ffffff;"></i>
+                    <a href="#">Licenciatura en Contaduría, Auditoría e Impuestos</a>
+                </li>
+                <li>
+                    <i class="fas fa-angle-right" aria-hidden="true" style="color:#ffffff;"></i>
+                    <a href="#">Maestría en Administración</a>
+                </li>
+                <li><i class="fas fa-angle-right" aria-hidden="true" style="color:#ffffff;"></i>
+                    <a href="#">Maestría en Juicios Orales</a>
+                </li>
+                <li>
+                    <i class="fas fa-angle-right" aria-hidden="true" style="color:#ffffff;"></i>
+                    <a href="#">Maestría en Educación con Enfoque en Competencia</a>
+                </li>
+            </ul>
+            <!-- <a href="<?= base_url() ?>publico/reglamento/SolicitudCucm.pdf" download="SolicitudCucm" target="_blank">Descargar Solicitud de ingreso</a><br>
+            <a href="<?= base_url() ?>publico/reglamento/reglamento.pdf" download="reglamento" target="_blank">Descargar Reglamento</a> -->
+        </div>
+        <div class="col-md-4 footer_grid">
+            <div class="text-center">
+                <!-- <img src="<?= base_url() ?>publico/images/logo.png" class="rounded" alt="..."> -->
+            </div>
+            <ul class="address">
+                <!-- <li><i class="fa fa-map-marker" aria-hidden="true"></i>Av Paseo de la Sierra 615, Guayabal <span>Centro, 86090 Villahermosa, Tab.</span></li> -->
+                <!-- <li><i class="fab fa-whatsapp"></i></i><a href="https://api.whatsapp.com/send?phone=529933481509">9933481509</a></li> -->
+                <li><i class="fa fa-phone" aria-hidden="true"></i>315 2942</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>315 5385</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>315 8159</li>
+                <li><i class="fas fa-phone"></i>352 0686</li>
+				<li><i class="fas fa-phone"></i>Servicios escolares Ext 115</li>
+				<li><i class="fas fa-phone"></i>Dirección académica 107</li>
+				<li><i class="fas fa-phone"></i>Cobranza y facturación Ext 227 Y 106</li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+        <div class="footer_grids">
+            <div class="row" align="center">
+                <div class="col-md-2 col-md-offset-1" style="color:white" >
+                        <i style="color:white" class="fab fa-cc-visa fa-3x"></i>
+                        <br>Visa
+                    </div>
+                    <div class="col-md-2" style="color:white" >
+                            <i style="color:white" class="fab fa-cc-mastercard fa-3x"></i>
+                            <br>Mastercard
+                        </div>
+                        <div class="col-md-2" style="color:white" >
+                                <i style="color:white" class="fas fa-file-invoice-dollar fa-3x"></i>
+                                <br>Deposito
+                            </div>
+                            <div class="col-md-2" style="color:white" >
+                                    <i style="color:white" class="fas fa-exchange-alt fa-3x"></i>
+                                    <br>Transferencia
+                                </div>
+                            </div>
+                            <!-- <div class="clearfix"> </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_w3ls">
+                    <div class="container">
+                        <div class="footer_bottom1">
+                            <p>Av Paseo de la Sierra 615, Guayabal, Centro, 86090 Villahermosa, Tab.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //footer -->
+<!-- modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div> 
+            <div class="modal-body"> 
+                <img src="{% static 'cucm/images/becas.png' %}" class="img-responsive" style="width:100%; height: 100%;"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //modal -->
+</body>
+<script type="text/javascript" src="{% static 'cucm/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'cucm/js/jquery.scrollUp.min.js' %}"></script>
+<script src="{% static 'cucm/js/funcionesG.min.js' %}"></script>
+<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+</html>
